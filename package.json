@@ -1,0 +1,25 @@
+{
+  "name": "skin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Hans Christian Reinl <info@drublic.de> (https://drublic.de)",
+  "license": "MIT",
+  "scripts": {
+    "compile": "webpack app/index.js dist/index.js",
+    "watch": "onchange 'app/**/*.js' 'css/**/*.css' -- npm run compile"
+  },
+  "dependencies": {
+    "express": "^4.10.2",
+    "http": "0.0.0",
+    "johnny-five": "^0.9.10",
+    "jquery": "^2.1.4",
+    "socket.io": "^1.3.7",
+    "socket.io-client": "^1.3.7"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.0",
+    "onchange": "^2.0.0",
+    "style-loader": "^0.13.0"
+  }
+}
